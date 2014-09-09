@@ -1,7 +1,13 @@
 #bisque 0.2.0
 
-BISQUE is a small JavaScript-based CSS extension that helps web designers and developers to easily craft graphical interface by using CSS instead of images.
+A small JavaScript-based CSS extension that helps you to easily craft graphical interface by using CSS3 instead of images.
 
-Stand-alone and easy use. Do not have to configurate or learn too much rules.
+Stand-alone and easy to learn. There's nothing to do on the JavaScript part.
 
-> [View Demos](http://uhear.me/bisque/)
+###The advantages of CSS3 graphics:
+
+*  CSS file is far smaller than images;
+*  Easy to modify
+*  Responsive
+
+> Here are some [demos](http://uhear.me/bisque/).
