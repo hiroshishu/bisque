@@ -28,7 +28,7 @@ Then include bisque.js in the <head> element of your page.
 
 Mmmmm...That's it!
 
-###Browser Compatibility: IE9+ and modern browsers
+#####Browser Compatibility: IE9+ and modern browsers
 
 #Documentation
 
