@@ -4,7 +4,7 @@ Bisque is a small JavaScript-based CSS extension. It provides some new CSS prope
 
 Stand-alone, cross-browser and easy to learn. There's nothing to do on the JavaScript part. 
 
-###The advantages of CSS3 graphics:
+#####The advantages of CSS3 graphics:
 
 *  Minimum file size;
 *  Easy to modify;
@@ -32,11 +32,11 @@ Mmmmm...That's it!
 
 #Documentation
 
-##Shape Property
+####Shape Property
 
 This property is actually a shorthand for drawing a shape.  
 
-###Draws a rectangle
+######Draws a rectangle
 
 -bis-shape: rect(x, y, width, height, color);
 *  x: x coordinate of the top left corner
@@ -67,7 +67,7 @@ Note:
 *  If you define position/left/top/width/height/background-color after shape property, it will be overriden.
 *  These also apply to other shape functions.
 
-###Draws a circle
+######Draws a circle
 
 -bis-shape: circle(type, x, y, r, color);
 *  type: type of the circle. If this argument is omitted, the circle defaults to be a full circle. The following keywords is accepted: lh(left half), rh(right half), th(top half), bh(bottom half), tlq(top left quarter), trq(top right quarter), blq(bottom left quarter), brq(bottom right quarter)
@@ -76,7 +76,7 @@ Note:
 *  r: radius of the circle
 *  color: color of the circle
 
-###Draws a ellipse
+######Draws a ellipse
 
 -bis-shape: ellipse(type, x, y, rx, ry, color);
 *  type: type of the circle. If omitted, the circle defaults to be a full circle. The following keywords is accepted: lh(left half), rh(right half), th(top half), bh(bottom half), tlq(top left quarter), trq(top right quarter), blq(bottom left quarter), brq(bottom right quarter).
@@ -86,7 +86,7 @@ Note:
 *  ry: vertical radius of the ellipse
 *  color: color of the circle
 
-###Draws a triangle
+######Draws a triangle
 
 -bis-shape: triangle(type, x, y, width, height, color);
 *  type: type of the triangle. This argument is required. The following keywords is accepted: up, down, left, right.
@@ -96,7 +96,7 @@ Note:
 *  height: height of the triangle
 *  color: color of the triangle
 
-###Draws a sector of a circle, it should be in the range 0-90 degree
+######Draws a sector of a circle, it should be in the range 0-90 degree
 
 -bis-shape: sector(x, y, r, angle, start-angle, color);
 *  x: x coordinate of the center of the circle
@@ -106,7 +106,7 @@ Note:
 *  start-angle: start-angle of the sector, optional
 *  color: color of the ellipse
 
-###Draws a line
+######Draws a line
 
 -bis-shape: line(x1, y1, x2, y2, width, color, style);
 *  x1: x coordinate of the start point
