@@ -1,6 +1,6 @@
 #bisque 0.2.0
 
-Bisque is a small JavaScript-based CSS extension. It provides some new CSS properties that helps you to easily craft graphical interface by using CSS3 instead of images. 
+Bisque is a small JavaScript-based CSS extension. It provides some new CSS properties and features that helps you to easily craft graphical interface by using CSS3 instead of images. 
 
 Stand-alone, cross-browser and easy to learn. There's nothing to do on the JavaScript part. 
 
@@ -9,6 +9,8 @@ Stand-alone, cross-browser and easy to learn. There's nothing to do on the JavaS
 *  Minimum file size;
 *  Easy to modify;
 *  Responsive;
+
+#####Browser Compatibility: IE9+ and modern browsers
 
 Here are some [demos with source code](http://uhear.me/bisque/). This might give you a feeling of how stuff works.
 
@@ -20,19 +22,17 @@ First of all, link your stylesheets that bisque will process and set 'rel' attri
   <link rel='stylesheet/bisque' type='text/css' href='graphics.css'/>
 ```
 
-Then include bisque.js in the <head> element of your page.
+Then include bisque.js in the \<head> element of your page.
 
 ```html
-  <script type='text/javascript' src='bisque.js'></script>
+  <script type='text/javascript' src='bisque.min.js'></script>
 ```
 
 Mmmmm...That's it!
 
-#####Browser Compatibility: IE9+ and modern browsers
-
 #Documentation
 
-####Shape Property
+####The 'bis-shape' Property
 
 This property is actually a shorthand for drawing a shape.  
 
@@ -115,7 +115,37 @@ Note:
 *  y2: y coordinate of the end point
 *  width: width of the line
 *  color: color of the line
-*  style: style of the line, optional. The argument is equivalent to 'border-style' property.
+*  style: style of the line, optional. This argument is equivalent to 'border-style' property.
+
+####The 'bis-shadow-copy' Property
+
+This property is similar with 'box-shadow' property, but attaches one or more shadow copies to the elements. The copies are exact same shape with the elements. 
+
+Note: This property only applies to elements that is absolute position. Pseudo elements will not effective.
+
+-bis-shadow-copy: offset-x offset-y color transform / transform-origin
+*  offset-x: horizontal offset of the copy
+*  offset-y: vertical offset of the copy
+*  color: color of the copy
+*  transform: applies a transformation to the copy, equivalent to 'transform' property
+*  transform-origin: changes the position on the transformed copy, equivalent to 'transform-origin' property
+
+For example:
+
+```css
+  -bis-shadow-copy: 10px 20px white rotate(30deg) / top left;
+```
+
+####The 'bis-kit' Property
+
+
+
+
+
+
+
+
+
 
 
 
