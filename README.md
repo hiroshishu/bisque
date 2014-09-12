@@ -32,7 +32,7 @@ Mmmmm...That's it!
 
 #Documentation
 
-###'-bis-shape' property
+##'-bis-shape' property
 
 This property is actually a shorthand for drawing a shape.  
 
@@ -139,7 +139,7 @@ Notes:
 *  If you define position/left/top/width/height/border/border-width/border-style/border-color after this property, it will make the shape change correspondingly.
 
 
-###'-bis-shadow-copy' property
+##'-bis-shadow-copy' property
 
 This property is similar with the 'box-shadow' property, but attaches one or more shadow copies to the elements. The copies are exact same shape with the elements. 
 
@@ -159,7 +159,7 @@ For example:
 ```
 
 
-###'-bis-kit' property
+##'-bis-kit' property
 
 This property specifies the type of form control to display. You can customize the display by styling pseudo-elements without considering the different vendor prefixes. The onchange event occurs when the value of an element has been changed.
 
@@ -247,7 +247,7 @@ For example:
 ```
 
 
-###Lazy iteration
+##Lazy iteration
 
 This feature allows you to create repeating values on some certain properties, such as box-shadow, text-shadow, background-image(multi-gradient) and -bis-shadow-copy.
 
@@ -298,7 +298,7 @@ In this example, the formula is equivalent to:
 ``` 
 
 
-###@-bis-to-em rule
+##@-bis-to-em rule
 
 With this rule, px to em conversion made simple. The syntax is @-bis-to-em <i>base-size</i>{ seletor{ css-style } }
 
@@ -325,7 +325,7 @@ compiles to:
 After compilation, we can scale this element to any size by the 'font-size' property.
 
 
-###Prefix free
+##Prefix free
 
 Bisque lets you use only unprefixed CSS properties. As for gradient, bisque make IE9 support it, and make some legacy browsers display exactly the same as W3C standard. But there're a few limitations:
 
