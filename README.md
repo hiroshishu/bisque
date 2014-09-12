@@ -63,9 +63,7 @@ compiles to:
 ```
 
 Notes:
-*  Any unit isn't required. If a unit exists, it will be treated as 'px'. Just use number for clarity.
-*  If you define position/left/top/width/height/background-color after this property, it will be overriden.
-*  These also apply to other shape functions.
+*  If you define position/left/top/width/height/background-color after this property, it will make the shape change correspondingly.
 
 #####Draws a circle
 
@@ -75,6 +73,10 @@ Notes:
 *  y: y coordinate of the center
 *  r: radius of the circle
 *  color: color of the circle
+
+Notes:
+*  Any unit isn't required. If a unit exists, it will be treated as 'px'. Just use number for clarity.
+*  If you define position/left/top/width/height/border-radius/background-color after this property, it will make the shape change correspondingly.
 
 #####Draws a ellipse
 
@@ -86,6 +88,10 @@ Notes:
 *  ry: vertical radius of the ellipse
 *  color: color of the ellipse
 
+Notes:
+*  Any unit isn't required. If a unit exists, it will be treated as 'px'. Just use number for clarity.
+*  If you define position/left/top/width/height/border-radius/background-color after this property, it will make the shape change correspondingly.
+
 #####Draws a triangle
 
 -bis-shape: triangle(type, x, y, width, height, color);
@@ -95,6 +101,11 @@ Notes:
 *  width: width of the triangle
 *  height: height of the triangle
 *  color: color of the triangle
+
+Notes:
+*  Any unit isn't required. If a unit exists, it will be treated as 'px'. Just use number for clarity.
+*  Because the shape is made with the 'border' property, you can't add a border to the shape;
+*  If you define position/left/top/width/height/border/border-width/border-style/border-color after this property, it will make the shape change correspondingly.
 
 #####Draws a sector of a circle, it should be in the range 0-90 degree
 
@@ -106,6 +117,11 @@ Notes:
 *  start-angle: start angle of the sector, optional
 *  color: color of the sector
 
+Notes:
+*  Any unit isn't required. If a unit exists, it will be treated as 'px'. Just use number for clarity.
+*  Because the shape is made with the 'border' property, you can't add a border to the shape;
+*  If you define position/left/top/width/height/border/border-width/border-style/border-color after this property, it will make the shape change correspondingly.
+
 #####Draws a line
 
 -bis-shape: line(x1, y1, x2, y2, width, color, style);
@@ -116,6 +132,11 @@ Notes:
 *  width: width of the line
 *  color: color of the line
 *  style: style of the line, optional. This argument is equivalent to the 'border-style' property.
+
+Notes:
+*  Any unit isn't required. If a unit exists, it will be treated as 'px'. Just use number for clarity.
+*  Because the shape is made with the 'border' property, you can't add a border to the shape;
+*  If you define position/left/top/width/height/border/border-width/border-style/border-color after this property, it will make the shape change correspondingly.
 
 ###'-bis-shadow-copy' property
 
