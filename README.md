@@ -138,6 +138,7 @@ Notes:
 *  Because the shape is made with the 'border' property, you can't add a border to the shape;
 *  If you define position/left/top/width/height/border/border-width/border-style/border-color after this property, it will make the shape change correspondingly.
 
+
 ###'-bis-shadow-copy' property
 
 This property is similar with the 'box-shadow' property, but attaches one or more shadow copies to the elements. The copies are exact same shape with the elements. 
@@ -156,6 +157,7 @@ For example:
 ```css
   -bis-shadow-copy: 10px 20px white rotate(30deg) / top left, 0 40px #e4a skew(10deg);
 ```
+
 
 ###'-bis-kit' property
 
@@ -244,6 +246,7 @@ For example:
   progress::progress-value { background: red; }
 ```
 
+
 ###Lazy iteration
 
 This feature allows you to create repeating values on some certain properties, such as box-shadow, text-shadow, background-image(multi-gradient) and -bis-shadow-copy.
@@ -270,7 +273,6 @@ In this example, we specified 3 times repeatition. The formula is equivalent to:
   }
 ``` 
 
-
 #####Two-nested-loop: (+|-)am(+|-)b  (+|-)an(+|-)b
 
 The <i>a</i> and <i>b</i> values must be integers, the <i>m</i> and <i>n</i> values start from 0. For example:
@@ -294,6 +296,7 @@ In this example, the formula is equivalent to:
   	}
   }
 ``` 
+
 
 ###@-bis-to-em rule
 
@@ -320,6 +323,7 @@ compiles to:
 ``` 
 
 After compilation, we can scale this element to any size by the 'font-size' property.
+
 
 ###Prefix free
 
