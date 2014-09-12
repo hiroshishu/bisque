@@ -4,13 +4,13 @@ Bisque is a small JavaScript-based CSS extension. It provides some new CSS prope
 
 Stand-alone, cross-browser and handy. On the JavaScript part there's nothing to do. 
 
-#####The advantages of CSS3 graphics:
+####The advantages of CSS3 graphics:
 
 *  Minimum file size;
 *  Easy to modify;
 *  Responsive;
 
-#####Browser Compatibility: IE9+ and modern browsers
+####Browser Compatibility: IE9+ and modern browsers
 
 Here are some [demos with source code](http://uhear.me/bisque/). This might give you a feeling of how stuff works.
 
@@ -36,7 +36,7 @@ Mmmmm...That's it!
 
 This property is actually a shorthand for drawing a shape.  
 
-#####Draws a rectangle
+####Draws a rectangle
 
 -bis-shape: rect(x, y, width, height, color);
 *  x: x coordinate of the top left corner
@@ -65,7 +65,7 @@ compiles to:
 Notes:
 *  If you define position/left/top/width/height/background-color after this property, it will make the shape change correspondingly.
 
-#####Draws a circle
+####Draws a circle
 
 -bis-shape: circle(type, x, y, r, color);
 *  type: type of the circle. If this argument is omitted, the circle defaults to be a full circle. The following keywords is accepted: lh(left half), rh(right half), th(top half), bh(bottom half), tlq(top left quarter), trq(top right quarter), blq(bottom left quarter), brq(bottom right quarter)
@@ -78,7 +78,7 @@ Notes:
 *  Any unit isn't required. If a unit exists, it will be treated as 'px'. Just use number for clarity.
 *  If you define position/left/top/width/height/border-radius/background-color after this property, it will make the shape change correspondingly.
 
-#####Draws a ellipse
+####Draws a ellipse
 
 -bis-shape: ellipse(type, x, y, rx, ry, color);
 *  type: type of the circle. If omitted, the circle defaults to be a full circle. The following keywords is accepted: lh(left half), rh(right half), th(top half), bh(bottom half), tlq(top left quarter), trq(top right quarter), blq(bottom left quarter), brq(bottom right quarter).
@@ -92,7 +92,7 @@ Notes:
 *  Any unit isn't required. If a unit exists, it will be treated as 'px'. Just use number for clarity.
 *  If you define position/left/top/width/height/border-radius/background-color after this property, it will make the shape change correspondingly.
 
-#####Draws a triangle
+####Draws a triangle
 
 -bis-shape: triangle(type, x, y, width, height, color);
 *  type: type of the triangle. This argument is required. The following keywords is accepted: up, down, left, right.
@@ -107,7 +107,7 @@ Notes:
 *  Because the shape is made with the 'border' property, you can't add a border to the shape;
 *  If you define position/left/top/width/height/border/border-width/border-style/border-color after this property, it will make the shape change correspondingly.
 
-#####Draws a sector of a circle, it should be in the range 0-90 degree
+####Draws a sector of a circle, it should be in the range 0-90 degree
 
 -bis-shape: sector(x, y, r, angle, start-angle, color);
 *  x: x coordinate of the center of the circle
@@ -122,7 +122,7 @@ Notes:
 *  Because the shape is made with the 'border' property, you can't add a border to the shape;
 *  If you define position/left/top/width/height/border/border-width/border-style/border-color after this property, it will make the shape change correspondingly.
 
-#####Draws a line
+####Draws a line
 
 -bis-shape: line(x1, y1, x2, y2, width, color, style);
 *  x1: x coordinate of the start point
@@ -163,7 +163,7 @@ For example:
 
 This property specifies the type of form control to display. You can customize the display by styling pseudo-elements without considering the different vendor prefixes. The onchange event occurs when the value of an element has been changed.
 
-#####Defines a slider control
+####Defines a slider control
 
 -bis-kit: slider;
 
@@ -189,7 +189,7 @@ For example:
   input::tooltip { display: none; }
 ```
 
-#####Defines a number picker
+####Defines a number picker
 
 -bis-kit: number;
 
@@ -209,7 +209,7 @@ For example:
   input::spin-down { border-top: 1px solid #ddd; }
 ```
 
-#####Defines a knob control
+####Defines a knob control
 
 -bis-kit: knob;
 
@@ -228,7 +228,7 @@ For example:
   }
 ```
 
-#####Defines a progress bar
+####Defines a progress bar
 
 -bis-kit: progress;
 
@@ -251,7 +251,7 @@ For example:
 
 This feature allows you to create repeating values on some certain properties, such as box-shadow, text-shadow, background-image(multi-gradient) and -bis-shadow-copy.
 
-#####Single-loop: (+|-)an(+|-)b
+####Single-loop: (+|-)an(+|-)b
 
 The <i>a</i> and <i>b</i> values must be integers, the <i>n</i> value starts from 0. For example:
 
@@ -273,7 +273,7 @@ In this example, we specified 3 times repeatition. The formula is equivalent to:
   }
 ``` 
 
-#####Two-nested-loop: (+|-)am(+|-)b  (+|-)an(+|-)b
+####Two-nested-loop: (+|-)am(+|-)b  (+|-)an(+|-)b
 
 The <i>a</i> and <i>b</i> values must be integers, the <i>m</i> and <i>n</i> values start from 0. For example:
 
