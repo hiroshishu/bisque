@@ -103,7 +103,7 @@ Notes:
 *  y: y coordinate of the center of the circle
 *  r: radius of the circle
 *  angle: angle of the sector
-*  start-angle: start-angle of the sector, optional
+*  start-angle: start angle of the sector, optional
 *  color: color of the sector
 
 #####Draws a line
@@ -143,6 +143,7 @@ This property specifies the type of form control to display. You can customize t
 #####Defines a slider control
 
 -bis-kit: slider;
+
 This type only apply to \<input> element. The default rendering is a horizontal slider. You can get a vertical one by setting 'orient' attribute to 'vertical'. It provides a number of pseudo-elements to customize the slider control.
 *  ::fill-lower: the track portion underneath / before the handle
 *  ::fill-upper: the track portion above / after the handle
@@ -162,15 +163,18 @@ For example:
   input::fill-upper { background: green; }
   input::thumb { background: red; }
   input::track { padding: 20px 0; }
-  input::tooltip { display: none;
+  input::tooltip { display: none; }
 ```
 
 #####Defines a number picker
 
 -bis-kit: number;
+
 This type only apply to \<input> element. It provides a spinner control for number picker inputs.
 *  ::spin-up: the upper spinner button
 *  ::spin-down: the lower spinner button
+
+For example:
 
 ```html
   <input orient=vertical min=20 max=200 step=10>
@@ -185,7 +189,10 @@ This type only apply to \<input> element. It provides a spinner control for numb
 #####Defines a knob control
 
 -bis-kit: knob;
+
 This type only apply to \<input> element. It is square by default. You can make it round by styling the element. You can also set the range of rotation angle by setting 'rotate-start' and 'rotate-end' attributes. The default range is 45-135 degrees. 
+
+For example:
 
 ```html
   <input min=20 max=200 step=10 rotate-start=30 rotate-end=150>
@@ -201,6 +208,7 @@ This type only apply to \<input> element. It is square by default. You can make 
 #####Defines a progress bar
 
 -bis-kit: progress;
+
 This type only apply to \<progress> element. The default orientation is horizontal. You can get a vertical progress bar by setting 'orient' attribute to 'vertical'. It provides 2 pseudo-elements for customization:
 '::progress-bar', '::progress-value'. 
 
