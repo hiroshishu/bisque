@@ -1,6 +1,6 @@
-#bisque 0.2.0
+#bisque v0.1.0
 
-Bisque is a small JavaScript-based CSS extension. It provides some new CSS properties and features that helps you to craft graphical interface by using CSS3 instead of images. 
+Bisque is a small JavaScript-based CSS extension. It provides some new CSS properties and features that help you to craft graphical interface by using CSS3 instead of images. 
 
 Stand-alone, cross-browser and handy. On the JavaScript part there's nothing to do. 
 
@@ -12,7 +12,7 @@ Stand-alone, cross-browser and handy. On the JavaScript part there's nothing to 
 
 ####Browser Compatibility: IE9+ and modern browsers
 
-Here are some [demos with source code](http://uhear.me/bisque/). This might give you a feeling of how stuff works.
+Here are some [examples with source code](https://hiroshishu.github.io/bisque/examples/). This might give you a feeling of how stuff works.
 
 #Usage
 
@@ -68,7 +68,7 @@ Notes:
 ####Draws a circle
 
 -bis-shape: circle(type, x, y, r, color);
-*  type: type of the circle. If this argument is omitted, the circle defaults to be a full circle. The following keywords is accepted: lh(left half), rh(right half), th(top half), bh(bottom half), tlq(top left quarter), trq(top right quarter), blq(bottom left quarter), brq(bottom right quarter)
+*  type: type of the circle. If this argument is omitted, the circle defaults to be a full circle. The following keywords is accepted: 1-2-l(left half), 1-2-r(right half), 1-2-t(top half), 1-2-b(bottom half), 1-4-tl(top left quarter), 1-4-tr(top right quarter), 1-4-bl(bottom left quarter), 1-4-br(bottom right quarter).
 *  x: x coordinate of the center
 *  y: y coordinate of the center
 *  r: radius of the circle
@@ -81,7 +81,7 @@ Notes:
 ####Draws a ellipse
 
 -bis-shape: ellipse(type, x, y, rx, ry, color);
-*  type: type of the circle. If omitted, the circle defaults to be a full circle. The following keywords is accepted: lh(left half), rh(right half), th(top half), bh(bottom half), tlq(top left quarter), trq(top right quarter), blq(bottom left quarter), brq(bottom right quarter).
+*  type: type of the circle. If omitted, the circle defaults to be a full circle. The following keywords is accepted: 1-2-l(left half), 1-2-r(right half), 1-2-t(top half), 1-2-b(bottom half), 1-4-tl(top left quarter), 1-4-tr(top right quarter), 1-4-bl(bottom left quarter), 1-4-br(bottom right quarter).
 *  x: x coordinate of the center
 *  y: y coordinate of the center
 *  rx: horizontal radius of the ellipse
@@ -213,7 +213,7 @@ For example:
 
 -bis-kit: knob;
 
-This type only apply to \<input> element. It is square by default. You can make it round by styling the element. You can also set the range of rotation angle by setting 'rotate-start' and 'rotate-end' attributes. The default range is 45-135 degrees. 
+This type only apply to \<input> element. It is square by default. You can make it round by styling the element. You can also set the range of rotation angle by setting 'rotate-start' and 'rotate-end' attributes. The default range is -135-135 degrees. 
 
 For example:
 
@@ -222,9 +222,9 @@ For example:
 ```
 
 ```css
-  input { 
+  input {
   	-bis-kit: knob;
-  	border-radius: 50%; 
+  	border-radius: 50%;
   }
 ```
 
@@ -232,8 +232,8 @@ For example:
 
 -bis-kit: progress;
 
-This type only apply to \<progress> element. The default orientation is horizontal. You can get a vertical progress bar by setting 'orient' attribute to 'vertical'. It provides 2 pseudo-elements for customization:
-'::progress-bar', '::progress-value'. 
+This type only apply to \<progress> element. The default orientation is horizontal. You can get a vertical progress bar by setting 'orient' attribute to 'vertical'. It provides 1 pseudo-elements for customization:
+'::progress-bar'. 
 
 For example:
 
@@ -243,7 +243,6 @@ For example:
 
 ```css
   progress::progress-bar { background: orange; }
-  progress::progress-value { background: red; }
 ```
 
 
@@ -298,14 +297,14 @@ In this example, the formula is equivalent to:
 ``` 
 
 
-##@-bis-to-em rule
+##@-bis-px2em rule
 
-With this rule, px to em conversion made simple. The syntax is @-bis-to-em <i>base-size</i>{ seletor{ css-style } }
+With this rule, px to em conversion made simple. The syntax is @-bis-px2em <i>base-size</i>{ seletor{ css-style } }
 
 Let's say we styled a element base on a 64*64 canvas, we can write this way:
 
 ```css
-  @-bis-to-em 64{
+  @-bis-px2em 64{
     div{
 	  width: 64px;
 	  height: 32px;
