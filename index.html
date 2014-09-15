@@ -1,1 +1,132 @@
-hello world
+<!doctype html>
+<!--[if lt IE 9 ]> <html lang="en" class="ie678"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" class="noie"> <!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta name="description" content="Bisque is a small JavaScript-based CSS extension that helps web designers and developers to easily craft graphical interface by using CSS instead of images.">
+	<meta name="keywords" content="HTML, CSS, JS, JavaScript, front-end, frontend, web development, web design, icon, logo, graphical interface, user interface, UI, bisque">
+	<meta name="author" content="Hiroshi Shu">
+	
+	<title>Bisque.js | A CSS Extension</title>
+	
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet/bisque" type="text/css" href="css/graphics.css">
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="build/bisque.min.js"></script>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<section id="intro">
+			<div class="center">
+				<h1>Bisque is a small JavaScript-based CSS extension.</h1>
+				<p>It provides some new CSS properties and features that help you to craft graphical interface by using CSS3 instead of images. Stand-alone, cross-browser and handy. On the JavaScript part there's nothing to do.</p>
+				<a href="//github.com/hiroshishu/bisque">View On GitHub</a>
+			</div>
+		</section>
+
+		<section id="ukiyoe">
+			<div class="center">
+				<div>
+					<b></b> <i></i>
+				</div>
+				
+				<p>
+					This is not an image, but a illustration made with few lines of CSS.
+				</p>
+			</div>
+		</section>
+
+		<section id="chart">
+			<div class="center">
+				<ul>
+					<li>
+						<div class="pie">
+							<b></b> <i></i> <s></s> <u></u> <em></em>
+						</div>
+					</li>
+	
+					<li>
+						<div class="bar">
+							<b></b> <i></i> <s></s>
+						</div>
+					</li>
+						
+					<li>
+						<div class="line">
+							<b></b> <i></i> <s></s> <u></u>
+						</div>
+					</li><br>
+				</ul>
+
+				<p>
+					With the help of bisque, you can create a simple chart in a minute.
+				</p>
+			</div>
+		</section>
+
+
+		<section id="clock">
+			<div class="center">
+				<div>
+					<em> <b></b> <i></i> <s></s> </em>
+				</div>
+
+				<p>
+					Crafting a sleek interface is dead easy.
+				</p>
+			</div>
+		</section>
+
+		<section id="color">
+			<div class="center">
+				<div>
+					<b><b></b></b> 
+					<input min=0 max=360 step=40>
+					<i></i>
+				</div>
+
+				<p>
+					So is interaction.
+				</p>
+			</div>
+		</section>
+
+		<section id="player">
+			<div class="center">
+				<div>
+					<audio preload='metadata' loop>
+						<source src='audio/star_wars.mp3' type='audio/mpeg'>
+						<source src='audio/star_wars.ogg' type='audio/ogg'>
+					</audio>
+			 		<em>
+						<b class="bis play-btn"></b>
+						<progress class="audio-buffer"></progress>
+						<progress class="time-update"></progress>
+						<input class="time-control">
+	
+						<i class="bis volume-loud"></i>
+						<input class="volume-control" value=80>	
+					</em>
+				</div>
+
+				<p>
+					With bisque, you can do more beyond these.
+				</p>
+			</div>
+		</section>
+		
+		<footer>
+			<p>©2014 Created and maintained by <a href="../">Hiroshi Shu</a>. Source code released under the MIT License</p>
+		</footer>
+	</div>
+
+</body>
+</html>

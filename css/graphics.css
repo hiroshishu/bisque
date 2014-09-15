@@ -1,0 +1,267 @@
+.wrapper{
+	-bis-shape: rect(0, 0, 100%, 100%);
+}
+
+
+/* demos */ 
+#ukiyoe>div>div:after{
+	content: '';
+	-bis-shape: circle(152, 112, 64, #db735c);
+	border: 8px solid bisque;
+}
+
+#ukiyoe>div>div>b{
+	-bis-shape: sector(160, 120, 800, 10);
+	-bis-shadow-copy: 18 0 0 #db735c rotate((20n)deg);
+}
+
+#ukiyoe>div>div>i{
+	-bis-shape: rect(-160, 340, 160, 200);
+	border-radius: 80px 80px 0 0;
+	box-shadow: 20 (120n)px 122px #cac4b5, 20 (120n)px 120px bisque,
+				20 (120n-20)px 82px #9aa09a, 20 (120n-20)px 80px bisque, 
+				20 (120n)px 42px #7a8586, 20 (120n)px 40px bisque,
+				20 (120n-20)px 2px #767a79, 20 (120n-20)px 0 bisque;
+}
+
+
+
+#chart .bar{
+	-bis-shape: rect(30, 30, 240, 240);
+	border-left: 1px solid #BDA488;
+}
+#chart .bar>b{
+	-bis-shape: rect(0, 40, 67%, 40px, #8a6d60);
+}
+#chart .bar>i{
+	-bis-shape: rect(0, 100, 92%, 40px, #8a6d60);
+}
+#chart .bar>s{
+	-bis-shape: rect(0, 160, 39%, 40px, #8a6d60);
+}
+
+
+
+#chart .pie{
+	-bis-shape: circle(150,150,120);
+	overflow: hidden;
+}
+#chart .pie>b{
+	-bis-shape: sector(120,120,125,80,0,#7a6752);
+} 
+#chart .pie>i{ 
+	-bis-shape: sector(120,120,125,75,80,#8d7a64);
+} 
+#chart .pie>s{ 
+	-bis-shape: sector(120,120,125,65,155,#bda488);
+} 
+#chart .pie>u{ 
+	-bis-shape: sector(120,120,125,90,220,#97856f);
+} 
+#chart .pie>em{ 
+	-bis-shape: sector(120,120,125,50,310,#d4b896);
+}
+
+
+#chart .line>b{
+	-bis-shape: line(30, 112, 110, 37, 1, #8a6d60);
+}
+#chart .line>i{
+	-bis-shape: line(110, 37, 190, 202, 1, #8a6d60);
+}
+#chart .line>s{
+	-bis-shape: line(190, 202, 270, 231, 1, #8a6d60);
+}
+#chart .line>u{
+	-bis-shape: line(270, 231, 270, 231, 1, #8a6d60);
+}
+#chart .line>b:before, #chart .line>i:before, 
+#chart .line>s:before, #chart .line>u:before{
+	content: '';
+	-bis-shape: circle( 0, 0, 4, #8a6d60);
+}
+
+
+
+
+#clock>div>div>em{
+	-bis-shape: circle(200, 200, 180);
+	background-image: radial-gradient(circle, bisque 160px, transparent 160px, transparent), 2 linear-gradient((90n)deg, transparent 49.5%, #BF2F2F 49.5%, #BF2F2F 50.5%, transparent 50.5%), radial-gradient(circle, bisque 168px, transparent 168px, transparent), 6 linear-gradient((30n)deg, transparent 49.5%, #BF2F2F 49.5%, #BF2F2F 50.5%, transparent 50.5%);
+}
+
+#clock>div>div>em>b, #clock>div>div>em>i, #clock>div>div>em>s{
+	background-color: #BF2F2F;
+	border-radius: 2px;
+	transform-origin: center bottom;
+}
+
+#clock>div>div>em>b{
+	-bis-shape: rect(175, 44, 8, 136);
+}
+
+#clock>div>div>em>b:before{
+	content: '';
+	-bis-shape: circle(4, 6, 3, bisque);
+}
+
+#clock>div>div>em>i{
+	-bis-shape: rect(176, 32, 6, 148);
+}
+
+#clock>div>div>em>i:before{
+	content: '';
+	-bis-shape: rect(2, 2, 2, 12, bisque);
+}
+
+#clock>div>div>em>s{
+	-bis-shape: rect(178, 24, 2, 156);
+}
+
+#clock>div>div>em>s:before{
+	content: '';
+	-bis-shape: circle(1, 156, 8, #BF2F2F);
+}
+
+#clock>div>div>em>s:after{
+	content: '';
+	-bis-shape: rect(-2, 156, 6, 16, #BF2F2F);
+}
+
+
+
+
+#color>div>div>b{
+	-bis-shape: circle(200, 200, 180);
+	overflow: hidden;
+	transform: rotate(-120deg);
+}
+
+#color>div>div>b>b{
+	-bis-shape: sector(180, 180, 200, 30, red);
+	-bis-shadow-copy: 9 0 0 hsl((40n), 60%, 47%) rotate((30n)deg);
+}
+
+#color>div>div>b:after{
+	content: '';
+	-bis-shape: circle(180, 180, 60, bisque);
+}
+
+#color>div>div>input{
+	-bis-kit: knob;
+	-bis-shape: circle(200, 200, 40, orange);
+	cursor: pointer;
+}
+
+#color>div>div>input:before{
+	content: '';
+	-bis-shape: triangle(up, 40, -14, 16, 16, orange);
+}
+
+#color>div>div>i{
+	-bis-shape: circle(200, 200, 20, hsl(0, 60%, 47%));
+	pointer-events: none;
+}
+
+
+
+
+
+#player>div>div>em{
+	-bis-shape: rect(20, 76, 360, 48);
+	background-color: #444;
+	border-radius: 8px;
+}
+
+#player>div>div>em>b{
+	-bis-shape: rect(0, 0, 48, 48);
+	cursor: pointer;
+}
+
+#player .play-btn>b{
+	-bis-shape: triangle(right, 18, 15, 12, 18, #eee);
+}
+
+#player .pause-btn>b{
+	-bis-shape: rect(15, 15, 6, 18);
+	border-width: 0 6px;
+	border-color: #eee;
+	border-style: solid;
+}
+
+#player>div>div>em>i{
+	-bis-shape: rect(240, 0, 48, 48);
+}
+
+#player .volume-mute>b, #player .volume-normal>b,
+#player .volume-loud>b{
+	-bis-shape: rect(0, 20, 4, 8, #eee);
+}
+#player .volume-mute>b:before, #player .volume-normal>b:before,
+#player .volume-loud>b:before{
+	content: '';
+	-bis-shape: triangle(left, 14, -6, 8, 12, #eee);
+	height: 8px;
+}
+#player .volume-normal>b:after{
+	content: '';
+	-bis-shape: circle(10, 0, 4);
+	border-width: 4px;
+	border-color: transparent #eee transparent transparent;
+	border-style: solid;
+}
+#player .volume-loud>b:after{
+	content: '';
+	-bis-shape: circle(6, -4, 2);
+	border-width: 8px;
+	border-color: transparent #eee transparent transparent;
+	border-style: double;
+}
+
+
+#player .audio-buffer{
+	-bis-kit: progress;
+	-bis-shape: rect(60, 20, 156, 8, #111);
+	border-radius: 4px;
+}
+#player .audio-buffer::progress-bar{
+	background-color: #555;
+	border-radius: 4px;
+}
+
+#player .time-update{
+	-bis-kit: progress;
+	-bis-shape: rect(60, 20, 156, 8, transparent);
+}
+
+#player .time-control{
+	-bis-kit: slider;
+	-bis-shape: rect(60, 20, 156, 8);
+	cursor: pointer;
+}
+
+#player .volume-control{
+	-bis-kit: slider;
+	-bis-shape: rect(276, 20, 72, 8);
+	cursor: pointer;
+}
+
+#player .time-control::thumb, #player .time-control::track,
+#player .volume-control::thumb, #player .volume-control::tooltip{
+	display: none;
+}
+#player .volume-control::track{
+	background-color: #111;
+	width: 100%;
+	height: 100%;
+	border-radius: 2px;
+}
+#player .time-update::progress-bar, #player .volume-control::fill-lower{
+	background-color: #db735c;
+	border-radius: 2px;
+}
+
+
+
+
+
+
