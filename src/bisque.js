@@ -1583,7 +1583,7 @@ function debug( text, id ){
 
 	if( !isDev && id ) return;
 	var msg = doc[ELEM]('p'), 
-		docs = id ? "&nbsp;&nbsp;&nbsp;&nbsp;<a target='blank' href='//sargentjs.com/docs/#" + id + "'>View docs</a>" : '';
+		docs = id ? "&nbsp;&nbsp;&nbsp;&nbsp;<a target='blank' href='//github.com/hiroshishu/bisque#documentation'>View docs</a>" : '';
 		
 	msg.style.cssText = [
 		'position:fixed', 'left:0', 'top:0', 'width:100%', 'z-index:10000', 'padding:1em 0', 
